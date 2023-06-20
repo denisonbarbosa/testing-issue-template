@@ -1,6 +1,6 @@
 name: Request a feature
 description: Suggest new functionality or improvements for this project
-title: 'Request: '
+title: 'Feature: '
 labels: 'feature'
 body:
   - type: markdown
@@ -50,38 +50,46 @@ body:
         place.
   - type: textarea
     attributes:
-      label: Environment
-      render: Text
+      label: "Ubuntu users: System information and logs"
+      description: >
+        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report.txt` and drag the file below.
+        It will contain any useful information.
+  - type: textarea
+    attributes:
+      label: "Non Ubuntu users: System information and logs"
       description: |
-        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and paste the file content below.
+        For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
+      value: |
+        ### Environment
+        * PROJECT_TODO version: please run TODO
+        * Distribution: (**NAME** in `/etc/os-release`)
+        * Distribution version: (**VERSION_ID** on `/etc/os-release`):
 
-        For users of other distributions, provide details about the environment you experienced the issue in:
-        * PROJECT_TODO version: Please run TODO
-        * Distribution
-        * Distribution version (you can find it on `/etc/os-release`)
-        * TODO: Any additional dependencies for people not running ubuntu-bug
+        ### Log files
+        Please redact/remove sensitive information:
+        ```raw
+        TODO: how to collect them
+        ```
+
+        ### Application settings
+        Please redact/remove sensitive information:
+        ```raw
+        TODO: how to collect them
+        ```
 
         FIXME: snap?
-    validations:
-      required: true
   - type: textarea
     attributes:
       label: Relevant information
       description: >
-        Please look at our [PROJECT_TODO Troubleshooting guide](URL_TODO/PROJECT_TODO#troubleshooting)
+        Please look at our
+        [PROJECT_TODO Troubleshooting guide](../#troubleshooting)
         and provide the debug logs for PROJECT_TODO.
 
-        Remember to redact any sensitive information from them.
-    validations:
-      required: true
+      placeholder: Remember to redact any sensitive information from them.
   - type: checkboxes
     attributes:
-      label: Is there any sensitive information in the logs?
+      label: Double check your logs
       options:
         - label: I have redacted any sensitive information from the logs
           required: true
-  - type: textarea
-    attributes:
-      label: Additional context
-      description: >
-        Add any other context about the problem here.

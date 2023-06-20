@@ -48,15 +48,16 @@ body:
         2. With this config...
         3. Run '...'
         4. See error...
-        
+
         Please include screenshots (you can drag any image here) where applicable. Redact any sensitive information.
     validations:
       required: true
   - type: textarea
     attributes:
       label: "Ubuntu users: System information and logs"
-      description: |
-        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report.txt` and drag the file below. It will contain any useful information.
+      description: >
+        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report.txt` and drag the file below.
+        It will contain any useful information.
   - type: textarea
     attributes:
       label: "Non Ubuntu users: System information and logs"
@@ -73,31 +74,27 @@ body:
         ```raw
         TODO: how to collect them
         ```
-          
+
         ### Application settings
         Please redact/remove sensitive information:
         ```raw
         TODO: how to collect them
         ```
-        
+
         FIXME: snap?
   - type: textarea
     attributes:
       label: Relevant information
       description: >
-        Please look at our [PROJECT_TODO Troubleshooting guide](URL_TODO/PROJECT_TODO#troubleshooting)
+        Please look at our
+        [PROJECT_TODO Troubleshooting guide](../#troubleshooting)
         and provide the debug logs for PROJECT_TODO.
-      placeholder: Remember to redact any sensitive information.
-    validations:
-      required: true
+
+      placeholder: Remember to redact any sensitive information from them.
   - type: checkboxes
     attributes:
       label: Double check your logs
       options:
         - label: I have redacted any sensitive information from the logs
           required: true
-  - type: textarea
-    attributes:
-      label: Additional context
-      description: >
-        Add any other context about the problem here.
+
