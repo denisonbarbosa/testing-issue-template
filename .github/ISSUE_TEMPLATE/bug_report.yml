@@ -80,6 +80,7 @@ body:
     validations:
       required: true
   - type: checkboxes
+    label:  
     attributes:
       options:
         - label: I have redacted any sensitive information from the logs
