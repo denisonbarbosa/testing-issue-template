@@ -87,8 +87,7 @@ body:
       description: >
         Please look at our [PROJECT_TODO Troubleshooting guide](URL_TODO/PROJECT_TODO#troubleshooting)
         and provide the debug logs for PROJECT_TODO.
-
-        Remember to redact any sensitive information from them.
+      placeholder: Remember to redact any sensitive information.
     validations:
       required: true
   - type: checkboxes
