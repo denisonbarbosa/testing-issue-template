@@ -55,17 +55,27 @@ body:
   - type: textarea
     attributes:
       label: System information and logs
-      render: Text
       description: |
         Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and drag the file below. It will contain any useful information.
-      placeholder: |
+      value: |
         For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
+        # Environment
         * PROJECT_TODO version: please run TODO
         * Distribution: (**NAME** in `/etc/os-release`)
         * Distribution version: (**VERSION_ID** on `/etc/os-release`):
-        * Log files (redact/remove sensitive information): TODO: how to collect them
-        * Application settings (redact/remove sensitive information): TODO: how to collect them.
 
+        # Log files
+        Please redact/remove sensitive information:
+        ```raw
+        TODO: how to collect them
+        ```
+          
+        # Application settings
+        Please redact/remove sensitive information:
+        ```raw
+        TODO: how to collect them
+        ```
+        
         FIXME: snap?
     validations:
       required: true
