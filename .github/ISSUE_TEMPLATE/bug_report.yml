@@ -81,7 +81,7 @@ body:
       required: true
   - type: checkboxes
     attributes:
-      label: Is there any sensitive information in the logs?
+      label: 
       options:
         - label: I have redacted any sensitive information from the logs
           required: true
