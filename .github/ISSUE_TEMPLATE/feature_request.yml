@@ -1,17 +1,17 @@
 name: Request a feature
 description: Suggest new functionality or improvements for this project
-title: ""
-labels: "feature"
+title: 'Request: '
+labels: 'feature'
 body:
   - type: markdown
     attributes:
       value: >
-        | :Warning: **Please do not report security vulnerabilities here** |
-        | Be careful with sensitive information and security vulnerabilities. In order to report bugs that could |
-        | contain sensitive information, use                                                         |
-        | [Launchpad](https://bugs.launchpad.net/ubuntu/+source/PROJECT_TODO/+filebug) instead.      |
-        | On Ubuntu machines, you can use `ubuntu-bug PROJECT_TODO` to collect relevant information. |
-        | --- |
+        :warning: **Please do not report security vulnerabilities here**
+
+        Be careful with sensitive information and security vulnerabilities. In order to report bugs that could contain
+        sensitive information, use [Launchpad](https://bugs.launchpad.net/ubuntu/+source/PROJECT_TODO/+filebug) instead.
+        On Ubuntu machines, you can use `ubuntu-bug PROJECT_TODO` to collect relevant information.
+
 
         Thanks for taking the time to report an issue and help improve PROJECT_TODO! Please fill out the form below as
         best as you can so that we can help you.
@@ -51,6 +51,7 @@ body:
   - type: textarea
     attributes:
       label: Environment
+      render: Text
       description: |
         Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and paste the file content below.
 
@@ -63,7 +64,6 @@ body:
         FIXME: snap?
     validations:
       required: true
-      render: Text
   - type: textarea
     attributes:
       label: Relevant information
