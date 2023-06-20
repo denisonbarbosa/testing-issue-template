@@ -54,12 +54,12 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Ubuntu users: System information and logs
+      label: "Ubuntu users: System information and logs"
       description: |
         Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report.txt` and drag the file below. It will contain any useful information.
   - type: textarea
     attributes:
-      label: Non Ubuntu users: System information and logs
+      label: "Non Ubuntu users: System information and logs"
       description: |
         For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
       value: |
