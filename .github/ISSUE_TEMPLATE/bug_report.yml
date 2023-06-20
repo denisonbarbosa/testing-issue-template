@@ -58,7 +58,7 @@ body:
       render: Text
       description: |
         Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and drag the file below. It will contain any useful information.
-      placeholder:
+      placeholder: |
         For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
         * PROJECT_TODO version: please run TODO
         * Distribution: (**NAME** in `/etc/os-release`)
