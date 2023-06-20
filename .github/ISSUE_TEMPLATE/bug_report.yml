@@ -44,25 +44,27 @@ body:
         Detail the steps taken to reproduce this error, what was expected, and whether this issue can be reproduced
         consistently or if it is intermittent.
       placeholder: |
-        Where applicable, please include:
-        * Code sample to reproduce the issue
-        * Log files (redact/remove sensitive information)
-        * Application settings (redact/remove sensitive information)
-        * Screenshots
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        4. See error...
+        
+        Please include screenshots (you can drag any image here) where applicable. Redact any sensitive information.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Environment
+      label: System information and logs
       render: Text
       description: |
-        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and paste the file content below.
-
-        For users of other distributions, provide details about the environment you experienced the issue in:
+        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and drag the file below. It will contain any useful information.
+      placeholder:
+        For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
         * PROJECT_TODO version: please run TODO
-        * Distribution
-        * Distribution version (you can find it on `/etc/os-release`)
-        * TODO: Any additional dependencies for people not running ubuntu-bug
+        * Distribution: (**NAME** in `/etc/os-release`)
+        * Distribution version: (**VERSION_ID** on `/etc/os-release`):
+        * Log files (redact/remove sensitive information): TODO: how to collect them
+        * Application settings (redact/remove sensitive information): TODO: how to collect them.
 
         FIXME: snap?
     validations:
