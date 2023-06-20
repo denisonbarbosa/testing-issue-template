@@ -1,0 +1,87 @@
+name: Request a feature
+description: Suggest new functionality or improvements for this project
+title: ""
+labels: "feature"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        | :Warning: **Please do not report security vulnerabilities here** |
+        | Be careful with sensitive information and security vulnerabilities. In order to report bugs that could |
+        | contain sensitive information, use                                                         |
+        | [Launchpad](https://bugs.launchpad.net/ubuntu/+source/PROJECT_TODO/+filebug) instead.      |
+        | On Ubuntu machines, you can use `ubuntu-bug PROJECT_TODO` to collect relevant information. |
+        | --- |
+
+        Thanks for taking the time to report an issue and help improve PROJECT_TODO! Please fill out the form below as
+        best as you can so that we can help you.
+
+        Your additional work here is greatly appreciated and will help us respond as quickly as possible. For general
+        support or usage questions, use [Ubuntu Discourse](https://discourse.ubuntu.com/c/desktop/8).
+
+        By submitting an Issue to this repository, you agree to the terms within the
+        [Ubuntu Code of Conduct](https://ubuntu.com/community/code-of-conduct).
+
+
+        FIXME: snap?
+  - type: checkboxes
+    attributes:
+      label: Is there an existing request for this feature?
+      options:
+        - label: I have searched the existing issues and found none that matched mine
+          required: true
+  - type: textarea
+    attributes:
+      label: Describe the feature
+      description: >
+        A clear and concise description of what the problem is. Ex.: \"I'm always frustrated when ...\"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the ideal solution
+      description: >
+        A clear and concise description of what you want to happen.
+  - type: textarea
+    attributes:
+      label: Alternatives and current workarounds
+      description: >
+        A clear and concise description of any alternatives you've considered or any workarounds that are currently in
+        place.
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and paste the file content below.
+
+        For users of other distributions, provide details about the environment you experienced the issue in:
+        * PROJECT_TODO version: Please run TODO
+        * Distribution
+        * Distribution version (you can find it on `/etc/os-release`)
+        * TODO: Any additional dependencies for people not running ubuntu-bug
+
+        FIXME: snap?
+    validations:
+      required: true
+      render: Text
+  - type: textarea
+    attributes:
+      label: Relevant information
+      description: >
+        Please look at our [PROJECT_TODO Troubleshooting guide](URL_TODO/PROJECT_TODO#troubleshooting)
+        and provide the debug logs for PROJECT_TODO.
+
+        Remember to redact any sensitive information from them.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Is there any sensitive information in the logs?
+      options:
+        - label: I have redacted any sensitive information from the logs
+          required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: >
+        Add any other context about the problem here.
