@@ -81,8 +81,6 @@ body:
         ```
         
         FIXME: snap?
-    validations:
-      required: true
   - type: textarea
     attributes:
       label: Relevant information
