@@ -54,23 +54,27 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: System information and logs
+      label: Ubuntu users: System information and logs
       description: |
-        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report` and drag the file below. It will contain any useful information.
-      value: |
+        Ubuntu users can run `ubuntu-bug PROJECT_TODO --save=/tmp/report.txt` and drag the file below. It will contain any useful information.
+  - type: textarea
+    attributes:
+      label: Non Ubuntu users: System information and logs
+      description: |
         For users of other distributions than ubuntu, provide details about the environment you experienced the issue in:
-        # Environment
+      value: |
+        ### Environment
         * PROJECT_TODO version: please run TODO
         * Distribution: (**NAME** in `/etc/os-release`)
         * Distribution version: (**VERSION_ID** on `/etc/os-release`):
 
-        # Log files
+        ### Log files
         Please redact/remove sensitive information:
         ```raw
         TODO: how to collect them
         ```
           
-        # Application settings
+        ### Application settings
         Please redact/remove sensitive information:
         ```raw
         TODO: how to collect them
